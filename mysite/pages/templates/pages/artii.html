@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}
+  아스키
+{% endblock %}
+{% block body %}
+<h1>아스키 아트</h1>
+<form action="{% url 'result' %}">
+  <label for="msg">영어만 입력해 주세요 : </label>
+  <input type="text" name="message" id = "msg">
+  <input type="submit" value="제출">
+</form>
+{% endblock %}

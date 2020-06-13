@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}
+	로또 구매
+{% endblock %}
+{% block body %}
+<h1>로또를 구매해 주셔서 감사합니다.</h1>
+<h1>로또 구매 페이지</h1>
+<form action="{% url 'lottoresult' %}" method="GET">
+  <label for="buy">구매 하고자 하는 갯수 : </label>
+  <input type="number" name="num" id = "buy">
+  <input type="submit" value="사자.">
+</form>
+{% endblock %}

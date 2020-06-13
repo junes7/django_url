@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}
+  로또 결과
+{% endblock %}
+{% block body %}
+<h1>로또 결과</h1>
+<P>로또를 {{ num }}만큼 구매하셨습니다.</P>
+<ul>
+  {% for lotto in lottos %}
+    <li>{{ lotto }}</li>
+  {% endfor %}
+</ul>
+<hr>
+<ul>
+  {% for sortlotto in sorted_lottos %}
+    <li>{{ sortlotto }}</li>
+  {% endfor %}
+</ul>
+{% endblock %}
